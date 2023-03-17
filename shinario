@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>シナリオ</title>
+        <link rel="stylesheet" href="https://tatara-supsys.github.io/test/main.css">
+    </head>
+    <body class="leftnull">
+
+      <a href="https://script.google.com/a/macros/supreme-system.com/s/AKfycbz7w0wS-mrZvyrnW1woPHHE6GX_MBcvBCmSuDOys2YaoQTIGWSQ4RttuxhSJJeifMcd/exec?p=index" class="back-link btn-square">戻る</a>
+      <h1>シナリオ</h1>
+    <h2><em>～シナリオ概要～</em> </h2>
+		<input name="test3" class="licheck" type="checkbox"> シナリオ名が[指示書I列(シナリオ名)]と同じか<br>
+		<input name="test3" class="licheck" type="checkbox"> シナリオ概要が[指示書F列(依頼詳細)]と同じか<br>
+		
+		
+    <h2>～アクション設定～</h2>
+		<input name="test3" class="licheck" type="checkbox"> 実行チャネルが[メール]か<br>
+		
+		<h3>★指示書L列(Cont有無)有の場合</h3>
+		
+    <input name="test3" class="licheck" type="checkbox"> 予備カラム1が[指示書O列(予備カラム（設定あれば）)]通りに設定されているか<br>
+    <input name="test3" class="licheck" type="checkbox"> シナリオIDが[指示書M列(シナリオID)]通りに設定されているか<br>
+		<input name="test3" class="licheck" type="checkbox"> A/Bテストに[コンテンツA/B]が設定されているか<br>
+		<input name="test3" class="licheck" type="checkbox"> アクションに[シナリオ名と同名のアクション]が設定されているか<span>（アクション名は50byte制限があるため、完全な同名ではない場合がある）</span><br>
+		<input name="test3" class="licheck" type="checkbox"> コンテンツが[指示書J列(コンテンツID)]通りに設定されているか<br>
+		<input name="test3" class="licheck" type="checkbox"> セグメント名が[指示書K列(セグメント名)]通りに設定されているか<br>
+		<input name="test3" class="licheck" type="checkbox"> セグメント比が[指示書L列(Cont有無)]通りに設定されているか<br>
+		<input name="test3" class="licheck" type="checkbox"> <span>トラッキングコードが[指示書N列(トラッキングコード)]通りに設定されているか（testにのみ、contは要らない）</span><br>
+		<input name="test3" class="licheck" type="checkbox"> <<b>配信日時が[指示書G列(配信希望日時)]通りに設定されているか</b><h3>現在の年月は<font color="red">です。</font></h3><br>
+		<input name="test3" class="licheck" type="checkbox"> 判定期間に[1日]が設定されているか<br>
+		<input name="test3" class="licheck" type="checkbox"> メール配信パターンに[デイリーメール以外]が設定されているか<br>
+		<input name="test3" class="licheck" type="checkbox"> 効果検証期間に[1日]が設定されているか<br>
+    <input name="test3" class="licheck" type="checkbox"> テストメール先に[テスト配信するメールアドレス]が設定されているか（検証時: qvc_cuenotetest@supreme-system.com 、納品時: DCM-Design@qvcjp.com ）<br>
+		
+		
+    <h3>★指示書L列(Cont有無)無の場合</h3>
+		
+		<input name="test3" class="licheck" type="checkbox"> A/Bテストに[実施しない]が設定されているか<br>
+		<input name="test3" class="licheck" type="checkbox"> アクションに[シナリオ名と同名のアクション]が設定されているか<span>（アクション名は50byte制限があるため、完全な同名ではない場合がある）</span><br>
+		<input name="test3" class="licheck" type="checkbox"> コンテンツが[指示書J列(コンテンツID)]通りに設定されているか<br>
+		<input name="test3" class="licheck" type="checkbox"> セグメント名が[指示書K列(セグメント名)]通りに設定されているか<br>
+		<input name="test3" class="licheck" type="checkbox"> シナリオIDが[指示書M列(シナリオID)]通りに設定されているか<br>
+		<input name="test3" class="licheck" type="checkbox"> <span>トラッキングコードが[指示書N列(トラッキングコード)]通りに設定されているか</span><br>
+		<input name="test3" class="licheck" type="checkbox"> メール配信パターンに[デイリーメール以外]が設定されているか<br>
+		<input name="test3" class="licheck" type="checkbox"> 予備カラム1が[指示書O列(予備カラム（設定あれば）)]通りに設定されているか<br>
+		<input name="test3" class="licheck" type="checkbox"> 効果検証期間に[1日]が設定されているか<br>
+		<input name="test3" class="licheck" type="checkbox"> <b>配信日時が[指示書G列(配信希望日時)]通りに設定されているか</b><h3>現在の年月は<font color="red">です。</font></h3><br>
+		<input name="test3" class="licheck" type="checkbox"> テストメール先に[テスト配信するメールアドレス]が設定されているか<span>（検証時: qvc_cuenotetest@supreme-system.com 、納品時: DCM-Design@qvcjp.com ）</span><br>
+		
+    <h3>実行スケジュール</h3>
+		<input name="test3" class="licheck" type="checkbox"> 繰り返しに[スポット]が設定されているか<br>
+		<input name="test3" class="licheck" type="checkbox"> 配信種別に[テスト配信,本番配信]が設定されているか<br>
+		<input name="test3" class="licheck" type="checkbox"> 実行日時に[指示書G列(配信希望日時)の1日前]が設定されているか　<span>（状況次第だが、時刻は 09:19,09:29, 09:39, 09:49 あたりに設定すれば良い）</span><br>
+
+    <div id="null">
+    </div>
+    </body>
+</html>
