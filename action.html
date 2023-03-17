@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>QVCマニュアル</title>
+        <link rel="stylesheet" href="https://tatara-supsys.github.io/test/main.css">
+    </head>
+      
+        <h1>アクション</h1>
+        
+        <h2><em>～ターゲット共通条件～</em> </h2>
+        <h3>★1番目のターゲットセットの最初の処理に、以下の部品が配置されているか</h3>
+        <input name="test3" class="licheck" type="checkbox"> [デイリーバッチのエラーチェック]<br>
+        <input name="test3" class="licheck" type="checkbox"> [cus_yobi001を初期化]<br>
+        <input name="test3" class="licheck" type="checkbox"> [メール配信可能顧客（デイリー以外）]<br>
+        
+        
+        <h3>★2番目以降のターゲットセットの最初の処理に、以下の部品が配置されているか</h3><br>
+        <input name="test3" class="licheck" type="checkbox"> [メール配信可能顧客（デイリー以外）] <span>（社員抽出用のターゲットセットの場合、代わりに [メール配信可能顧客（デイリー以外)_社員のみ] を配置する）</span><br>
+        <input name="test3" class="licheck" type="checkbox"> [cus_yobi001にデータがない顧客]<br>
+        
+        
+        <h3>★最後以外のターゲットセットの一番最後の処理に、以下の部品が配置されているか</h3><br>
+        <input name="test3" class="licheck" type="checkbox"><span> [cus_yobi001にデータ登録] （パラメータ内容はターゲットセット毎に異なるため、部品名も合わせて変えてあることが多い）</span><br>
+        
+        
+        <h3>★最後のターゲットセットの一番最後の処理に、以下の部品が配置されているか</h3><br>
+        <input name="test3" class="licheck" type="checkbox"><span> [cus_yobi001にデータ登録] （パラメータ内容はターゲットセット毎に異なるため、部品名も合わせて変えてあることが多い）</span><br>
+        <input name="test3" class="licheck" type="checkbox"> [cus_yobi001を顧客スコア001に保存]<br>
+        
+        
+        <h3>ターゲット個別条件</h3><br>
+        
+        <input name="test3" class="licheck" type="checkbox"> <span>各ターゲットセットにおいて、共通条件（冒頭／末尾）の間に[指示書R列(ターゲット条件)]通りの部品が適切なパラメータで配置されているか</span><br>
+        <input name="test3" class="licheck" type="checkbox"> <span>空のターゲットセットが存在していないか（存在していると全顧客が配信対象になってしまうので必ず削除する）</span><br>
+        
+        
+        <h3>オファー選択</h3><br>
+        
+        <input name="test3" class="licheck" type="checkbox"> <span>各オファーセットにおいて、[指示書S列(オファー条件（商品レコメンド内容）)]通りの部品が適切なパラメータで配置されているか</span><br>
+        <input name="test3" class="licheck" type="checkbox"> <span>シナリオ実行日時と配信日時の日付の差を考慮したパラメータ設定になっているか（配信1日前にシナリオ実行する場合、抽出対象品番は1日後を対象としておく）</span><br>
+        
+        
+        <h3>コンテンツ選択</h3>		
+        
+        <input name="test3" class="licheck" type="checkbox"> <span>顧客属性、キャンペーン属性、商品属性、利用スコアそれぞれについて、[指示書T列(コンテンツ選択例)]通りのパラメータが設定されているか</span><br>
+
+        <h3>新規ターゲット条件について補足</h3>
+        <input name="test3" class="licheck" type="checkbox"> 既存会員EDM新規登録（分析用seg番号＝58）について<br>
+        <input name="test3" class="licheck" type="checkbox"> 30日前時点でメール配信可（デイリー以外）に該当しない  かつ  30日以内NNではない顧客（1か月NN受注顧客除外）<br>
+
+        <h3>特定のキャンペーン対象者と演算処理部品</h3>
+        <input name="test3" class="licheck" type="checkbox"> チェックしたデータを「顧客or」し、編集中のデータ「から顧客を引きます。」<br>
+        <input name="test3" class="licheck" type="checkbox"> データ名：「お知らせメールOpt_in_out顧客集合_」「から始まる」<br>
+        <input name="test3" class="licheck" type="checkbox"> 登録日：「今日から40日前」～「今日から30日前」<br>
+        <input name="test3" class="licheck" type="checkbox"> 共有保存部品の設定値がEDM番号になっているか？<br>
+
+        <input name="test3" class="licheck" type="checkbox"> 絶対：検証資料の確認をする<br>
+        <h3>ターゲット条件No7,No8の検証資料作成は必要ない</h3>
+        <div id="null">
+        </div>
+    </body>
+</html>
