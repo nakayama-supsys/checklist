@@ -27,7 +27,7 @@
 		<input name="test3" class="licheck" type="checkbox"> セグメント名が[指示書K列(セグメント名)]通りに設定されているか<br>
 		<input name="test3" class="licheck" type="checkbox"> セグメント比が[指示書L列(Cont有無)]通りに設定されているか<br>
 		<input name="test3" class="licheck" type="checkbox"> <span>トラッキングコードが[指示書N列(トラッキングコード)]通りに設定されているか（testにのみ、contは要らない）</span><br>
-		<input name="test3" class="licheck" type="checkbox"> <<b>配信日時が[指示書G列(配信希望日時)]通りに設定されているか</b><h3>現在の年月は<font color="red">です。</font></h3><br>
+		<input name="test3" class="licheck" type="checkbox"> <b>配信日時が[指示書G列(配信希望日時)]通りに設定されているか</b><h3>現在の年月は<font color="red"><p id="current-date"></p></font>です。</h3><br>
 		<input name="test3" class="licheck" type="checkbox"> 判定期間に[1日]が設定されているか<br>
 		<input name="test3" class="licheck" type="checkbox"> メール配信パターンに[デイリーメール以外]が設定されているか<br>
 		<input name="test3" class="licheck" type="checkbox"> 効果検証期間に[1日]が設定されているか<br>
@@ -45,7 +45,7 @@
 		<input name="test3" class="licheck" type="checkbox"> メール配信パターンに[デイリーメール以外]が設定されているか<br>
 		<input name="test3" class="licheck" type="checkbox"> 予備カラム1が[指示書O列(予備カラム（設定あれば）)]通りに設定されているか<br>
 		<input name="test3" class="licheck" type="checkbox"> 効果検証期間に[1日]が設定されているか<br>
-		<input name="test3" class="licheck" type="checkbox"> <b>配信日時が[指示書G列(配信希望日時)]通りに設定されているか</b><h3>現在の年月は<font color="red">です。</font></h3><br>
+		<input name="test3" class="licheck" type="checkbox"> <b>配信日時が[指示書G列(配信希望日時)]通りに設定されているか</b><h3>現在の年月は<font color="red"><p id="current-date"></p></font>です。</h3><br>
 		<input name="test3" class="licheck" type="checkbox"> テストメール先に[テスト配信するメールアドレス]が設定されているか<span>（検証時: qvc_cuenotetest@supreme-system.com 、納品時: DCM-Design@qvcjp.com ）</span><br>
 		
     <h3>実行スケジュール</h3>
@@ -55,5 +55,13 @@
 
     <div id="null">
     </div>
+      <script>
+	const today = new Date();
+	const year = today.getFullYear();
+	const month = String(today.getMonth() + 1).padStart(2, '0');
+	const day = String(today.getDate()).padStart(2, '0');
+	const currentDate = `${year}/${month}/${day}`;
+	document.getElementById('current-date').textContent = currentDate;
+      </script>   
     </body>
 </html>
