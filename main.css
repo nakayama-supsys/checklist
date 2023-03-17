@@ -1,0 +1,307 @@
+<style>
+
+.btn-square {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #668ad8;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+}
+.btn-square:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(10px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
+#textbox2 {
+    margin-top: 5px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+.licheck {
+	transform:scale(2);
+}
+
+.back-link {
+  
+}
+
+span {
+    color:red;
+}
+
+.leftnull {
+  margin-left:50px;
+}
+
+input[name="lang"]{
+  transform:scale(2);
+}
+
+input[name="lang1"]{
+  transform:scale(2);
+}
+input[name="lang2"]{
+  transform:scale(2);
+}
+input[name="lang3"]{
+  transform:scale(2);
+}
+input[name="lang4"]{
+  transform:scale(2);
+}
+input[name="lang5"]{
+  transform:scale(2);
+}
+input[name="lang6"]{
+  transform:scale(2);
+}
+input[name="lang7"]{
+  transform:scale(2);
+}
+input[name="lang8"]{
+  transform:scale(2);
+}
+input[name="lang9"]{
+  transform:scale(2);
+}
+input[name="lang10"]{
+  transform:scale(2);
+}
+input[name="lang11"]{
+  transform:scale(2);
+}
+input[name="lang12"]{
+  transform:scale(2);
+}
+input[name="lang13"]{
+  transform:scale(2);
+}
+input[name="lang14"]{
+  transform:scale(2);
+}
+input[name="lang15"]{
+  transform:scale(2);
+}
+input[name="lang16"]{
+  transform:scale(2);
+}
+input[name="lang17"]{
+  transform:scale(2);
+}
+input[name="lang18"]{
+  transform:scale(2);
+}
+input[name="lang19"]{
+  transform:scale(2);
+}
+input[name="lang20"]{
+  transform:scale(2);
+}
+input[name="lang21"]{
+  transform:scale(2);
+}
+input[name="lang22"]{
+  transform:scale(2);
+}
+input[name="lang23"]{
+  transform:scale(2);
+}
+input[name="lang24"]{
+  transform:scale(2);
+}
+input[name="lang25"]{
+  transform:scale(2);
+}
+input[name="lang26"]{
+  transform:scale(2);
+}
+input[name="lang27"]{
+  transform:scale(2);
+}
+input[name="lang28"]{
+  transform:scale(2);
+}
+input[name="lang29"]{
+  transform:scale(2);
+}
+input[name="lang30"]{
+  transform:scale(2);
+}
+input[name="lang31"]{
+  transform:scale(2);
+}
+input[name="lang32"]{
+  transform:scale(2);
+}
+input[name="lang33"]{
+  transform:scale(2);
+}
+input[name="lang34"]{
+  transform:scale(2);
+}
+input[name="lang35"]{
+  transform:scale(2);
+}
+input[name="lang36"]{
+  transform:scale(2);
+}
+input[name="lang37"]{
+  transform:scale(2);
+}
+input[name="lang38"]{
+  transform:scale(2);
+}
+input[name="lang39"]{
+  transform:scale(2);
+}
+input[name="lang40"]{
+  transform:scale(2);
+}
+input[name="lang41"]{
+  transform:scale(2);
+}
+input[name="lang42"]{
+  transform:scale(2);
+}
+input[name="lang43"]{
+  transform:scale(2);
+}
+input[name="lang44"]{
+  transform:scale(2);
+}
+input[name="lang45"]{
+  transform:scale(2);
+}
+input[name="lang46"]{
+  transform:scale(2);
+}
+input[name="lang47"]{
+  transform:scale(2);
+}
+input[name="lang48"]{
+  transform:scale(2);
+}
+input[name="lang49"]{
+  transform:scale(2);
+}
+input[name="lang50"]{
+  transform:scale(2);
+}
+input[name="lang51"]{
+  transform:scale(2);
+}
+input[name="lang52"]{
+  transform:scale(2);
+}
+input[name="lang53"]{
+  transform:scale(2);
+}
+input[name="lang54"]{
+  transform:scale(2);
+}
+input[name="lang55"]{
+  transform:scale(2);
+}
+input[name="lang56"]{
+  transform:scale(2);
+}
+.allcheck {
+  margin-top: 15px;
+  float: left;
+} 
+
+.boxContainer{
+  display: flex;
+}
+
+#worker {
+  margin-left:8px;
+}
+
+#work_details {
+  margin-left:35px;
+}
+
+#delivery_date {
+  margin-left:70px;
+}
+
+.box26 {
+    position: relative;
+    margin: 2em 0;
+    padding: 0.5em 1em;
+    border: solid 3px #95ccff;
+    border-radius: 8px;
+    width: 1000px;
+}
+.box26 .box-title {
+    position: absolute;
+    display: inline-block;
+    top: -13px;
+    left: 10px;
+    padding: 0 9px;
+    line-height: 1;
+    font-size: 19px;
+    background: #FFF;
+    color: #95ccff;
+    font-weight: bold;
+}
+.box26 p {
+    margin: 0; 
+    padding: 0;
+}
+
+#null {
+  margin-top:100px;
+}
+
+.acd-check{
+    display: none;
+}
+.acd-label{
+    background: #3078F2;
+    color: #fff;
+    display: block;
+    margin-bottom: 1px;
+    padding: 10px;
+    margin-left: 30px;
+}
+.acd-content{
+    border: 1px solid #3078F2;
+    height: 0;
+    opacity: 0;
+    padding: 0 10px;
+    transition: .5s;
+    visibility: hidden;
+    margin-left: 30px;
+}
+.acd-check:checked + .acd-label + .acd-content{
+    height: auto;
+    opacity: 1;
+    padding: 10px;
+    visibility: visible;
+}
+.thum_box {
+  width: 400px;
+  height: 280px;
+}
+.thum_box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10px;
+  width: 300px;
+  height: 50px;
+  color: #000;
+  z-index: 2;
+</style>
