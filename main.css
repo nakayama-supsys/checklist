@@ -228,11 +228,6 @@ input[name="lang56"]{
 #delivery_date {
   margin-left:70px;
 }
-.box26::before {
-    content: "";
-    display: block;
-    padding-top: calc(((720 / 1280) * 100%));
-}
 .box26 {
     position: relative;
     margin: 2em 0;
